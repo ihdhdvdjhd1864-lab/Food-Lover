@@ -1,0 +1,561 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* بدايه صفحه 1 */
+
+.koko {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.332);
+  position: fixed;
+  border-radius: 0 0 50px 50px;
+}
+.koko img {
+  width: 70px;
+}
+.kimo {
+  background-size: cover;
+  background-image: url(img/home_bg.jpeg);
+  position: relative;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.kimo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000067;
+}
+.kimo * {
+  z-index: 2;
+}
+
+.nova a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  padding-bottom: 7px;
+  font-size: 18px;
+}
+
+.nova a:hover {
+  border-bottom: 2px solid #ffff00;
+}
+
+.text {
+  color: #ffff0074;
+  display: inline-block;
+  animation-name: kimo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes kimo {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.food {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.food h1 {
+  margin: 2px;
+}
+.food a {
+  text-decoration: none;
+  color: white;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.food a:hover {
+  background-color: #ffff006b;
+}
+/* نهايه صفحه1 */
+
+/* بدايه صفحه 2 */
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}
+.title p {
+  color: #858383e4;
+}
+.raee {
+  width: 500px;
+}
+.raee p {
+  color: #858383e4;
+}
+
+.raee .LEARN {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #f6e656b0;
+  padding: 7px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.raee .LEARN:hover {
+  color: black;
+  border: 2px solid black;
+  background-color: #ffff0021;
+}
+
+.raee-koalo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.raee-koalo img {
+  width: 420px;
+  margin-right: -50px;
+}
+/* نهايه صفحه 2 */
+
+/* بدايه صفحه 3 */
+
+.bhaga {
+  background-image: url(img/offer-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: 30px;
+}
+.title2 {
+  text-align: center;
+  padding-top: 30px;
+}
+.title2 h2 {
+  color: #ffff0074;
+  font-size: xx-large;
+}
+.title2 p {
+  color: white;
+  font-size: small;
+  font-weight: 600;
+}
+.lolomkann {
+  text-align: center;
+  height: 100vh;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(249, 245, 245);
+}
+
+del {
+  font-size: 13px;
+}
+.lolomkann p {
+  width: 350px;
+}
+
+.lolomkann img {
+  width: 200px;
+  transition: 0.5s;
+}
+.lolomkann img:hover {
+  width: 220px;
+}
+.manee {
+  color: yellow;
+  padding-left: 10px;
+  transition: 0.8s;
+}
+.manee:hover {
+  font-size: 20px;
+}
+/* نهايه صفحه 3 */
+
+/* بدايه صفحه 4 */
+.manu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.pppp {
+  text-align: center;
+  color: #aeae00d5;
+}
+
+.nbar1 img {
+  width: 60px;
+  border-radius: 50%;
+  padding-right: 10px;
+  transition: 0.5s;
+}
+
+.nbar1 img:hover {
+  width: 70px;
+  filter: brightness(1.3);
+}
+h4 {
+  margin-bottom: -10px;
+}
+.nbar1 p {
+  width: 200px;
+}
+
+.boom {
+  text-align: center;
+}
+
+.nbar1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 1px 0;
+}
+.EXPLORE-FULL-MENU {
+  text-align: center;
+  margin: 50px 0px;
+}
+.EXPLORE-FULL-MENU a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #f6e656b0;
+  padding: 7px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.EXPLORE-FULL-MENU a:hover {
+  color: black;
+  border: 2px solid black;
+  background-color: #ffff0021;
+}
+/* نهايه صفحه 4 */
+
+/* بدايه صفحه 5 */
+
+.lloo {
+  color: white;
+  background-image: url(img/daytime_bg.jpeg);
+  background-size: cover;
+  text-align: center;
+  filter: brightness(1.2);
+}
+
+.aeas-kramm {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
+}
+
+.aeas-kramm h3 {
+  font-size: 32px;
+  margin: 20px 0 10px;
+}
+
+.aeas-kramm {
+  font-weight: 500;
+}
+/* نهايه صفحه 5 */
+
+/* بدايه صفحه 6 */
+
+.khdrawat {
+  background-image: url(img/offer-background.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -16px;
+}
+.khdrawat1 {
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.khdrawat img {
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.khdrawat img:hover {
+  filter: brightness(1.3);
+  width: 290px;
+  height: 210px;
+  box-shadow: 0px 0px 10px 5px #0000004e;
+}
+
+.hww h2 {
+  margin: 50px;
+  font-size: 35px;
+  color: white;
+}
+/* نهايه صفحه 6 */
+
+/* بدايه اخر صفحه7 */
+
+.classBagg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 100px;
+  margin-left: 480px;
+  margin-right: 480px;
+}
+.fa3 p {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.fa3 i {
+  display: flex;
+  font-size: 25px;
+  background-color: #080348;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.fa3 i:hover {
+  background-color: #2fff0075;
+}
+
+.classBagg h3 {
+  font-size: 30px;
+  margin-bottom: -15px;
+}
+.classBagg p {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.526);
+}
+.fa1 i {
+  color: #ebeb069a;
+}
+
+.formmmmmmmmm input,
+textarea {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ffff0019;
+  text-align: right;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 15px 0;
+  width: 350px;
+  height: 50px;
+}
+textarea {
+  width: 300px;
+  height: 150px;
+  resize: none;
+}
+input[type="submit"] {
+  width: 130px;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  transition: 0.5s;
+}
+input[type="submit"]:hover {
+  background-color: #1e7c0ba5;
+}
+
+hr {
+  display: inline-block;
+  width: 2px;
+  height: 500px;
+}
+/*  نهايه اخر صفحه 7*/
+
+.cckk {
+  background-color: #080348ca;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Media Query for Mobile (370px) --- */
+@media screen and (max-width: 370px) {
+  /* 1. الناف بار (Logo & Menu) */
+  .koko {
+    flex-direction: column; /* العناصر تحت بعض */
+    padding: 10px;
+  }
+  .nova a {
+    font-size: 14px; /* صغر الخط شوية */
+    padding: 5px;
+  }
+
+  /* 2. الصفحة الأولى (Home) */
+  .food h1 {
+    font-size: 24px; /* صغر العنوان الكبير */
+    text-align: center;
+  }
+
+  /* 3. صفحة 2 (About Section) */
+  .raee-koalo {
+    flex-direction: column; /* الصورة والكلام تحت بعض */
+    align-items: center;
+    text-align: center;
+  }
+  .raee {
+    width: 100%; /* ياخد عرض الشاشة */
+    padding: 20px;
+  }
+  .raee-koalo img {
+    width: 90%; /* الصورة تصغر عشان متخرجش بره */
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  /* 4. صفحة 3 (Offer Section) */
+  .lolomkann {
+    flex-direction: column; /* العناصر تحت بعض */
+    height: auto;
+    padding: 50px 0;
+  }
+  .lolomkann p {
+    width: 90%; /* الكلام ميبقاش عريض أوي */
+  }
+
+  /* 5. صفحة 4 (Menu Section) */
+  .manu {
+    flex-direction: column; /* المنيو تحت بعض */
+    gap: 30px;
+  }
+  .nbar1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nbar1 p {
+    width: 100%;
+  }
+
+  /* 6. صفحة 5 (Stats Section) */
+  .aeas-kramm {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  /* 7. صفحة 6 (Gallery) */
+  .khdrawat img {
+    width: 90%; /* الصور تاخد العرض المتاح */
+    height: auto;
+  }
+
+  /* 8. صفحة 7 (Contact Section) */
+  .classBagg {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 40px;
+  }
+  hr {
+    display: none; /* شيل الخط الطولي في الموبايل ملوش لازمة */
+  }
+  .formmmmmmmmm input,
+  textarea {
+    width: 100%; /* الفورم تاخد العرض كله */
+  }
+}
+
+@media screen and (max-width: 370px) {
+  /* تظبيط القسم اللي في الصورة (صفحة 3 - الـ Offer) */
+  .bhaga {
+    height: auto; /* بدل 100vh عشان العناصر تاخد راحتها */
+    padding-bottom: 50px;
+  }
+
+  .lolomkann {
+    flex-direction: column; /* ترتيب رأسي */
+    height: auto;
+    margin-top: 20px; /* بدل الـ -50px اللي كانت مسببة تداخل */
+    gap: 20px; /* مسافة بين العناصر */
+  }
+
+  .lolomkann p {
+    width: 90% !important; /* نضمن إن العرض ميتخطاش الشاشة */
+    margin: 10px auto;
+  }
+
+  .lolomkann img {
+    width: 150px; /* نصغر الصورة شوية عشان الكلام يظهر */
+  }
+
+  /* تظبيط العناوين عشان متبقاش لازقة في السقف */
+  .title2 {
+    padding-top: 20px;
+  }
+
+  .title2 h2 {
+    font-size: 1.5rem; /* صغر حجم الخط شوية */
+  }
+  .food p {
+    text-align: center;
+  }
+  .nbar1 p {
+    width: 320px;
+  }
+}
