@@ -326,14 +326,17 @@ h4 {
 /* بدايه اخر صفحه7 */
 
 .classBagg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  gap: 100px;
-  margin-left: 480px;
-  margin-right: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 50px; /* قلل الجاب شوية */
+    flex-wrap: wrap; /* عشان لو المساحة ضاقت ينزلوا تحت بعض */
+    max-width: 1200px; /* استخدم max-width بدل margin ثابت */
+    margin: 30px auto; /* سنترها في النص */
 }
+
+
 .fa3 p {
   display: inline-block;
   margin-right: 15px;
@@ -413,24 +416,6 @@ hr {
   align-items: center;
   padding: 0px 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -558,4 +543,44 @@ hr {
   .nbar1 p {
     width: 320px;
   }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* تظبيط الهيدر */
+    .koko {
+        flex-direction: column;
+        border-radius: 0 0 30px 30px;
+        padding: 10px;
+    }
+    
+    .nova a {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    /* أي حاجة واخدة عرض ثابت نلغيه */
+    .raee, .raee-koalo img, .lolomkann p, .formmmmmmmmm input, textarea {
+        width: 100% !important;
+        max-width: 320px; /* عرض مناسب للموبايلات الصغيرة */
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .raee-koalo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* صفحة 7 - شيل المارجن اللي بوظ الدنيا */
+    .classBagg {
+        margin: 20px 10px !important;
+        gap: 20px;
+    }
+
+    hr {
+        display: none; /* الخط الطولي بيبوظ الموبايل */
+    }
 }
